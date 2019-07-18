@@ -7,6 +7,10 @@ export default class App extends React.Component {
         super()
     }
 
+    state = {
+        stuff: []
+    }
+
     componentDidMount() {
         fetch("http://api.open-notify.org/astros.json")
             .then( resp => resp.json() )
@@ -18,6 +22,6 @@ export default class App extends React.Component {
     }
 
     render() {
-        
+
     }
 }
